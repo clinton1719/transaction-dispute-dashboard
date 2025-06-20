@@ -1,54 +1,102 @@
-# React + TypeScript + Vite
+# 💸 Transaction Dispute Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, professional-grade React.js app for managing and raising disputes on customer transactions. Built for financial use cases, inspired by real-world workflows from BFSI companies like Mastercard and HSBC.
 
-Currently, two official plugins are available:
+![preview](https://user-images.githubusercontent.com/your-screenshot-url.png) <!-- (optional: add image later) -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🧾 **Transaction Viewer** — View all recent transactions
+- 🔍 **Search & Filter** — Search by merchant, filter by status
+- 📊 **Sorting** — Sort by amount or number of disputes
+- ⚠️ **Raise Dispute** — Clean form with Zod + React Hook Form
+- 📄 **PDF Export** — Generate printable transaction PDFs
+- 🎨 **Responsive UI** — Built with Tailwind CSS + shadcn/ui
+- 🧠 **State Management** — Redux Toolkit for global state
+- 🔁 **Persisted State** — Disputes persist across navigation
+- ✅ **Fully Typed** — End-to-end TypeScript support
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🏗️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| Tech             | Why                                     |
+|------------------|------------------------------------------|
+| React + Vite     | Fast modern web app setup               |
+| TypeScript       | Safer, cleaner code                     |
+| Redux Toolkit    | Scalable global state                   |
+| React Hook Form  | Minimal, performant form management     |
+| Zod              | Declarative schema validation           |
+| Tailwind CSS     | Utility-first, responsive styling       |
+| shadcn/ui        | Prebuilt professional UI components     |
+| html2canvas + jsPDF | Export views as downloadable PDFs     |
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 📸 Screenshots
+
+> Add screenshots of:
+> - Dashboard view
+> - Dispute form
+> - PDF download
+> - Responsive mobile view
+
+---
+
+## 🧪 Running Locally
+
+```bash
+git clone https://github.com/your-username/dispute-dashboard.git
+cd dispute-dashboard
+
+npm install
+npm run dev
+
+Runs on http://localhost:5173/
+
+src/
+│
+├── components/         # Reusable UI components
+├── features/           # Feature-based structure (transactions, disputes)
+├── pages/              # Route-level components
+├── store/              # Redux store + slices
+├── types/              # Global TypeScript types
+├── utils/              # Mock data & helpers
+└── App.tsx             # Root app logic
+
+## 📚 Concepts Implemented
+
+✅ Props  
+✅ State & State Lifting  
+✅ Routing (`react-router-dom`)  
+✅ Redux Toolkit Store/Slice setup  
+✅ Form validation (Zod + Hook Form)  
+✅ UI responsiveness  
+✅ Code-splitting & lazy loading  
+✅ Barrel exports  
+✅ Reusable card-based UIs
+
+---
+
+## 📦 Future Enhancements
+
+- [ ] Backend API integration  
+- [ ] Role-based admin dashboard  
+- [ ] Pagination and infinite scroll  
+- [ ] Export as CSV  
+- [ ] Unit tests (Vitest + Testing Library)
+
+---
+
+## 👨‍💻 Author
+
+Built by **[Clinton](https://github.com/your-github-profile)** —  
+React engineer focused on high-performance apps for banking and fintech use cases.
+
+---
+
+## 🪪 License
+
+MIT — free to use and modify.

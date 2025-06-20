@@ -10,7 +10,7 @@ export interface Transaction {
   referenceNumber: string;
   accountId: string;
   initiatedBy: string;
-  otpVerified: string;
+  otpVerified: boolean;
   location: string;
-  fraudCheckPassed: string;
+  fraudCheckPassed: boolean;
 }

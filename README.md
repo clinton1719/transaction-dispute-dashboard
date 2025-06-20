@@ -2,7 +2,7 @@
 
 A modern, professional-grade React.js app for managing and raising disputes on customer transactions. Built for financial use cases, inspired by real-world workflows from BFSI companies like Mastercard and HSBC.
 
-![preview](https://transaction-dispute-dashboard.vercel.app/) <!-- (optional: add image later) -->
+![Preview](https://transaction-dispute-dashboard.vercel.app/) <!-- (optional: add image later) -->
 
 ---
 

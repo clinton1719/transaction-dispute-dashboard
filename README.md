@@ -92,7 +92,7 @@ src/
 
 ## 👨‍💻 Author
 
-Built by **[Clinton](https://github.com/your-github-profile)** —  
+Built by **[Clinton](https://github.com/clinton1719)** —  
 React engineer focused on high-performance apps for banking and fintech use cases.
 
 ---
